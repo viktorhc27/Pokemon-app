@@ -1,0 +1,25 @@
+<div class="principal">
+    <div class="titulo">
+        <h1>Buscador</h1>
+    </div>
+    <form action="" #namePok="ngForm" (ngSubmit)="onSubmit()">
+
+        <input type="text" name="name" #nombre="ngModel" [(ngModel)]="pokemon.nombre" class="css-input" />
+        <button>Buscar</button>
+
+    </form>
+
+
+</div>
+<!-- <div class="resultado">
+    <div class="titulo">
+        <h1>Nombre</h1>
+    </div>
+    <div class="info">
+        <div class="imagenes">
+
+        </div>
+        <div class="detalles"></div>
+    </div>
+
+</div> -->

@@ -1,0 +1,26 @@
+<div *ngFor="let p of datos" id="info">
+
+    <div class="principal">
+        <h6>#00{{p.id}}</h6>
+        <h1>{{p.name}}</h1>
+        <img [src]="p.sprites.other.home.front_default">
+    </div>
+    <div id="detalles">
+        <h1>Detalles</h1>
+        <div >
+            Tamaño: {{p.weight}}
+        </div>
+        <div>Tipo:</div>
+        <div class="tipos">
+            
+            <div *ngFor="let tipos of p.types">
+                {{tipos.type.name}}
+                <!-- <img src="../../../assets/images/types/{{tipos.type.name}}.png" alt=""> -->
+                
+           </div>
+        </div>
+        
+        
+        
+    </div>
+</div> 

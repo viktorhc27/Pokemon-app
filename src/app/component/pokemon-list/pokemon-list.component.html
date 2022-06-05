@@ -1,0 +1,15 @@
+<!-- Utilizamos ngFor para recorrer el array -->
+
+
+<div id="fondo">
+    <div *ngFor="let p of pokemones; let i=index" class="tarjeta">
+        <div class="titulo">
+            <h4>{{p["name"]}}</h4>
+        </div>
+        <div class="imagen"><img [src]="p.sprites.other.home.front_default"></div>
+
+        <div class="footer"><button (click)="redireccion(i+1)">Ver Infomracion</button></div>
+
+    </div>
+
+</div>
